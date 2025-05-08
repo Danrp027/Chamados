@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abertura de Chamado - Dados Pessoais</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="abertura">
+      <h1>Abertura de Chamado</h1>
+      <p>Informe seus dados para iniciar o chamado.</p>
+
+    </div>
+
+    <div id="cabecalho">
+      <form id="form-dados-pessoais" action="/sala-laboratorio" method="get">
+        <section id="ajustes">
+          <h2>Dados Pessoais</h2>
+          <br />
+          <div>
+            <label for="nome">Nome Completo:</label>
+            <br />
+            <input type="text" id="nome" name="nome" required />
+          </div>
+          <br />
+          <div>
+            <label for="email">E-mail:</label>
+            <br />
+            <input type="email" id="email" name="email" required />
+          </div>
+        </section>
+        <button type="submit">Próximo</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
