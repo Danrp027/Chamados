@@ -7,34 +7,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="abertura">
-      <h1>Abertura de Chamado</h1>
-      <p>Informe seus dados para iniciar o chamado.</p>
+    <main class="container">
+      <section id="abertura">
+        <h1>Abertura de Chamado</h1>
+        <p>Informe seus dados para iniciar o chamado.</p>
+      </section>
 
-    </div>
-
-    <div id="cabecalho">
-      <form id="form-dados-pessoais" action="/sala-laboratorio" method="get">
-        <section id="ajustes">
+      <section id="cabecalho">
+        <form id="form-dados-pessoais" action="/sala-laboratorio" method="get">
           <h2>Dados Pessoais</h2>
-          <br />
-          <div>
+          <div class="input-group">
             <label for="nome">Nome Completo:</label>
-            <br />
             <input type="text" id="nome" name="nome" required />
           </div>
-          <br />
-          <div>
+          <div class="input-group">
             <label for="email">E-mail:</label>
-            <br />
             <input type="email" id="email" name="email" required />
           </div>
-        </section>
-        <br>
-        <button type="submit">Próximo</button>
-      </form>
-    </div>
-
+          <button type="submit">Próximo</button>
+        </form>
+      </section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
